@@ -8,6 +8,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
+      - 🇺🇲 美国均衡
       - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
@@ -30,6 +31,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 📲 电报节点
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAi
@@ -43,6 +45,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 💬 AI节点
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
@@ -56,6 +59,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 📹 油管节点
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
@@ -234,6 +238,12 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: 🇺🇲 美国均衡
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: load-balance
+    interval: 300
+    tolerance: 50
   - name: 🇨🇳 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
@@ -249,6 +259,24 @@ proxy-groups:
   - name: 🇰🇷 韩国节点
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 📹 油管节点
+    include-all: true
+    filter: (?i)Youtube|YOUTUBE
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 💬 AI节点
+    include-all: true
+    filter: (?i)Gemini|Openai
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 📲 电报节点
+    include-all: true
+    filter: (?i)Telegram
     type: url-test
     interval: 300
     tolerance: 50
