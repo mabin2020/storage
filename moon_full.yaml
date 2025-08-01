@@ -498,6 +498,12 @@ rule-providers:
     type: http
 
 rules:
+  - "DOMAIN-SUFFIX,tdft.cn,DIRECT"
+  - "DOMAIN-SUFFIX,bugutv.vip,DIRECT"
+  - "DOMAIN-SUFFIX,synology.me,DIRECT"
+  - "DOMAIN-SUFFIX,dingtalk.com,DIRECT"
+  - "DOMAIN-SUFFIX,dingtalkapps.com,DIRECT"
+  - "DOMAIN-SUFFIX,88mv.org,DIRECT"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
