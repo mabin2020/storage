@@ -270,7 +270,7 @@ proxy-groups:
     tolerance: 50
   - name: 💬 AI节点
     include-all: true
-    filter: (?i)Gemini|Openai
+    filter: (?i)Openai
     type: url-test
     interval: 300
     tolerance: 50
