@@ -264,13 +264,13 @@ proxy-groups:
     tolerance: 50
   - name: 📹 油管节点
     include-all: true
-    filter: (?i)Youtube|YOUTUBE
+    filter: (?i)Youtube|YOUTUBE|YT-
     type: url-test
     interval: 300
     tolerance: 50
   - name: 💬 AI节点
     include-all: true
-    filter: (?i)Openai
+    filter: (?i)Openai|GPT|GPT+
     type: url-test
     interval: 300
     tolerance: 50
@@ -282,7 +282,7 @@ proxy-groups:
     tolerance: 50
   - name: 🎥 奈飞节点
     include-all: true
-    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media|D+
     type: select
 
 rule-providers:
