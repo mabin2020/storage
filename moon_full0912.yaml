@@ -10,6 +10,8 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇺🇲 美国均衡
       - 🇰🇷 韩国节点
+      - 🇳🇱 荷兰节点
+      - 🇩🇪 德国节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -253,6 +255,18 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇳🇱 荷兰节点
+    include-all: true
+    filter: (?i)荷兰|NL|Nederland
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇩🇪 德国节点
+    include-all: true
+    filter: (?i)德国|DE|German
     type: url-test
     interval: 300
     tolerance: 50
