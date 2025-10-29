@@ -238,13 +238,13 @@ proxy-groups:
     tolerance: 50
   - name: 🇺🇲 美国节点
     include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US_|United States
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US_|United States|CA
     type: url-test
     interval: 300
     tolerance: 50
   - name: 🇺🇲 美国均衡
     include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US_|United States
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US_|United States|CA
     type: load-balance
     interval: 300
     tolerance: 50
@@ -274,13 +274,13 @@ proxy-groups:
     tolerance: 50
   - name: 🌏 欧洲节点
     include-all: true
-    filter: (?i)德国|DE|German|荷兰|NL|Nederland|FR|GB|SE|FI
+    filter: (?i)德国|DE|German|荷兰|NL|Nederland|FR|GB|SE|FI|ES
     type: url-test
     interval: 300
     tolerance: 50
   - name: 🌏 亚洲节点
     include-all: true
-    filter: (?i)KR|SG|VN|HK|JP|TW|AM|IQ
+    filter: (?i)KR|SG|VN|HK|JP|TW|AM|IQ|IN
     type: url-test
     interval: 300
     tolerance: 50
