@@ -14,6 +14,8 @@ proxy-groups:
       - 🇩🇪 德国节点
       - 🌏 欧洲节点
       - 🌏 亚洲节点
+      - 🌏 欧洲均衡
+      - 🌏 亚洲均衡
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -274,14 +276,26 @@ proxy-groups:
     tolerance: 50
   - name: 🌏 欧洲节点
     include-all: true
-    filter: (?i)德国|DE|German|荷兰|NL|Nederland|FR|GB|SE|FI|ES
+    filter: (?i)德国|DE|German|荷兰|NL|Nederland|FR|GB|SE|FI|ES|Other
     type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🌏 欧洲均衡
+    include-all: true
+    filter: (?i)德国|DE|German|荷兰|NL|Nederland|FR|GB|SE|FI|ES|Other
+    type: load-balance
     interval: 300
     tolerance: 50
   - name: 🌏 亚洲节点
     include-all: true
     filter: (?i)KR|SG|VN|HK|JP|TW|AM|IQ|IN
     type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🌏 亚洲均衡
+    include-all: true
+    filter: (?i)KR|SG|VN|HK|JP|TW|AM|IQ|IN
+    type: load-balance
     interval: 300
     tolerance: 50
   - name: 🇰🇷 韩国节点
